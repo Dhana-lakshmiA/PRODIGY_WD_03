@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictactoe.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Tic Tac Toe</h1>
+
+      <div id="mode-selection" class="buttons">
+        <button id="two-player-btn">Two Player</button>
+        <button id="ai-player-btn">Single Player vs AI</button>
+      </div>
+
+      <div id="name-inputs" style="display: none">
+        <input type="text" id="player1" placeholder="Enter Player 1 Name" />
+        <input type="text" id="player2" placeholder="Enter Player 2 Name" />
+        <button id="start-game">Start Game</button>
+      </div>
+
+      <div id="board" class="board" style="display: none"></div>
+
+      <button id="reset" class="reset" style="display: none">Reset Game</button>
+      <p id="message" class="message"></p>
+    </div>
+    <div id="win-popup" class="popup"></div>
+
+    <script src="tictactoe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </body>
+</html>
